@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset = "UTF-8"
+    <title>FinTech Loan Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>FinTech</h1>
+
+        <p class="subtitle">
+            Loan Affordability Calculator
+        </p>
+
+
+        <div class="card">
+
+            <h2>Customer Information</h2>
+
+            <div class="form-group">
+
+                <label>Customer Name</label>
+
+                <input
+                    type="text"
+                    id="customerName"
+                    placeholder="Enter customer name"
+                >
+
+            </div>
+
+
+            <h2>Monthly Financial Information</h2>
+
+            <div class="form-group">
+
+                <label>Monthly Salary</label>
+
+                <input
+                    type="number"
+                    id="salary"
+                    placeholder="Enter monthly salary"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Monthly Expenses</label>
+
+                <input
+                    type="number"
+                    id="expenses"
+                    placeholder="Enter monthly expenses"
+                >
+
+            </div>
+
+
+            <h2>Loan Information</h2>
+
+            <div class="form-group">
+
+                <label>Loan Amount</label>
+
+                <input
+                    type="number"
+                    id="loanAmount"
+                    placeholder="Enter loan amount"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Interest Rate (%)</label>
+
+                <input
+                    type="number"
+                    id="interestRate"
+                    placeholder="Enter annual interest rate"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Loan Tenure (Years)</label>
+
+                <input
+                    type="number"
+                    id="tenure"
+                    placeholder="Enter loan tenure"
+                >
+
+            </div>
+
+
+            <button onclick="calculateLoan()">
+                Calculate Loan
+            </button>
+            
+            <button type="button" onclick="resetForm()">
+                Reset
+            </button>
+
+        </div>
+
+
+        <div class="result-card">
+
+            <h2>Loan Assessment Result</h2>
+
+            <div id="result">
+                Your result will appear here.
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
